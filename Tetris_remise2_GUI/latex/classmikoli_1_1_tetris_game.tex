@@ -1,0 +1,402 @@
+\section{mikoli\+:\+:Tetris\+Game Class Reference}
+\label{classmikoli_1_1_tetris_game}\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+
+
+The \doxyref{Tetris\+Game}{p.}{classmikoli_1_1_tetris_game} class.  
+
+
+
+
+{\ttfamily \#include $<$tetrisgame.\+h$>$}
+
+Inheritance diagram for mikoli\+:\+:Tetris\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmikoli_1_1_tetris_game}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a45d786fe16165f6c5674e0c2e77d873f}} 
+\textbf{ Tetris\+Game} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Tetris\+Game}{p.}{classmikoli_1_1_tetris_game}\textquotesingle{}s constructor without parameter. Build a standard game with level mode \char`\"{}normal\char`\"{} and difficulty \char`\"{}normal\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a656587e3891ab9e539a2dd48bf135301}} 
+\textbf{ Tetris\+Game} (int width, int height)
+\begin{DoxyCompactList}\small\item\em \doxyref{Tetris\+Game}{p.}{classmikoli_1_1_tetris_game}\textquotesingle{}s constructor with size parameters. Build a standard game with level mode \char`\"{}normal\char`\"{} and difficulty \char`\"{}normal\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a79f3e22683d8e7a0f0bf8cc214c6fc11}} 
+\textbf{ $\sim$\+Tetris\+Game} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Tetris\+Game}{p.}{classmikoli_1_1_tetris_game} destructor. Deallocate the memory that was previously reserved for the Game. \end{DoxyCompactList}\item 
+\textbf{ Figure} \textbf{ get\+Current\+Fig} ()
+\begin{DoxyCompactList}\small\item\em get\+Current\+Fig \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Block} $>$ \textbf{ get\+Shadow\+CF} () const
+\begin{DoxyCompactList}\small\item\em get\+Shadow\+CF \end{DoxyCompactList}\item 
+\textbf{ Figure} \textbf{ get\+Next\+Fig} ()
+\begin{DoxyCompactList}\small\item\em get\+Next\+Fig \end{DoxyCompactList}\item 
+\textbf{ Board} \textbf{ get\+Board} ()
+\begin{DoxyCompactList}\small\item\em get\+Board \end{DoxyCompactList}\item 
+bool \textbf{ is\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em is\+Game\+Over \end{DoxyCompactList}\item 
+bool \textbf{ is\+Won} ()
+\begin{DoxyCompactList}\small\item\em is\+Won \end{DoxyCompactList}\item 
+int \textbf{ get\+Score} ()
+\begin{DoxyCompactList}\small\item\em get\+Score \end{DoxyCompactList}\item 
+int \textbf{ get\+Level} ()
+\begin{DoxyCompactList}\small\item\em get\+Level \end{DoxyCompactList}\item 
+int \textbf{ get\+Nb\+Lines} ()
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Lines \end{DoxyCompactList}\item 
+\textbf{ Mode} \textbf{ get\+Mode} ()
+\begin{DoxyCompactList}\small\item\em get\+Mode \end{DoxyCompactList}\item 
+bool \textbf{ is\+Begin} ()
+\begin{DoxyCompactList}\small\item\em is\+Begin \end{DoxyCompactList}\item 
+bool \textbf{ is\+Paused} ()
+\begin{DoxyCompactList}\small\item\em is\+Paused \end{DoxyCompactList}\item 
+int \textbf{ get\+Speed} ()
+\begin{DoxyCompactList}\small\item\em statut\+Speed \end{DoxyCompactList}\item 
+bool \textbf{ get\+Is\+Falling} ()
+\begin{DoxyCompactList}\small\item\em statut\+Is\+Falling \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a4cd2ff57abb9ceee0f42619851b12abd}} 
+bool {\bfseries check\+If\+Is\+Blocked} ()
+\item 
+\textbf{ Timer} $\ast$ \textbf{ get\+Timer} ()
+\begin{DoxyCompactList}\small\item\em get\+Timer \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a6836c2950a85bbfd715a59475f9a82f4}} 
+void \textbf{ is\+Win} ()
+\begin{DoxyCompactList}\small\item\em is\+Win Check if the conditions of win are completed. \end{DoxyCompactList}\item 
+void \textbf{ move} (Direction direction)
+\begin{DoxyCompactList}\small\item\em move \end{DoxyCompactList}\item 
+void \textbf{ rotate} (Direction direction)
+\begin{DoxyCompactList}\small\item\em rotate \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a6f6eb76f89b135a6a58daa3054fd6951}} 
+void \textbf{ fall} ()
+\begin{DoxyCompactList}\small\item\em fall \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a1fe4705ee285f6d8229926fef35c63a8}} 
+void \textbf{ fall\+Slow} ()
+\begin{DoxyCompactList}\small\item\em fall\+Slow \end{DoxyCompactList}\item 
+void \textbf{ end\+Move} (int nb\+Drop)
+\begin{DoxyCompactList}\small\item\em end\+Move \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a7d3c96ed27130ce1bf8f227c1e764d88}} 
+void \textbf{ end\+Game} ()
+\begin{DoxyCompactList}\small\item\em end\+Game Stop the \char`\"{}tetris\char`\"{} music and play the \char`\"{}game over\char`\"{} sound, replace all the blocks from the board with grey blocks. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a1d880f26d4e1c364ea502f2298f0ef76}} 
+void \textbf{ calculate\+Shadow} ()
+\begin{DoxyCompactList}\small\item\em calculate\+Shadow Calcul the positions of the shadow according to the positions of the current figure. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a027e2933909131c71384d311c594c000}} 
+void \textbf{ switch\+Pause} ()
+\begin{DoxyCompactList}\small\item\em switch\+Pause Switch the game into paused / not paused mode. \end{DoxyCompactList}\item 
+void \textbf{ set\+Is\+Begin} (bool \textbf{ is\+Begin})
+\begin{DoxyCompactList}\small\item\em set\+Is\+Begin \end{DoxyCompactList}\item 
+void \textbf{ set\+Is\+Falling} (bool is\+Falling)
+\begin{DoxyCompactList}\small\item\em set\+Is\+Falling \end{DoxyCompactList}\item 
+void \textbf{ set\+Auto\+Down} (bool auto\+Down)
+\begin{DoxyCompactList}\small\item\em set\+Auto\+Down \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a4277c82d6fefaf77c0bc14865c9aa880}} 
+void \textbf{ start} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{start()}{p.}{classmikoli_1_1_tetris_game_a4277c82d6fefaf77c0bc14865c9aa880} To start the game initialized. Actives the timer and make te \char`\"{}first current figure\char`\"{} moving down. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_af0991c69946b7714444644d0c7045512}} 
+void \textbf{ start\+With\+Mode} (Gamemode, int)
+\begin{DoxyCompactList}\small\item\em start\+With\+Mode Do the same as \doxyref{start()}{p.}{classmikoli_1_1_tetris_game_a4277c82d6fefaf77c0bc14865c9aa880} but change the game mode and the goal. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_tetris_game_a56a0258e956f428bfc8ea35ceec1c8ec}} 
+void \textbf{ restart} ()
+\begin{DoxyCompactList}\small\item\em restart Restart the game\+: reset the score, level, number of lines, board, figure\textquotesingle{}s bag, reset the sounds, reset the attriubutes, ... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Tetris\+Game}{p.}{classmikoli_1_1_tetris_game} class. 
+
+This class will be used for build a new game.
+
+\+\_\+figures\+Bag The list in which are each figure that will become the next figure and then the current \doxyref{Figure}{p.}{classmikoli_1_1_figure}. \+\_\+current\+Figure The figure that can be rotated or moved during its descent. \+\_\+next\+Figure 
+
+\subsection{Member Function Documentation}
+\mbox{\label{classmikoli_1_1_tetris_game_a95b1b5bd20310b52a39f26ea9d0850d1}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!end\+Move@{end\+Move}}
+\index{end\+Move@{end\+Move}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{end\+Move()}
+{\footnotesize\ttfamily void mikoli\+::\+Tetris\+Game\+::end\+Move (\begin{DoxyParamCaption}\item[{int}]{nb\+Drop }\end{DoxyParamCaption})}
+
+
+
+end\+Move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Drop} & The number of lines crossed by a fall. Handle the end of a move\+: Add the current figure to the board, check and remove lines if necessary, update the score, change the current figure with the next one, check if the next current figure can be placed in the board, check the conditions of win, ..., call \doxyref{end\+Game()}{p.}{classmikoli_1_1_tetris_game_a7d3c96ed27130ce1bf8f227c1e764d88} is necessary. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_tetris_game_a45bd5b4cfd5ae69d7fde7122d02f7e8e}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Board@{get\+Board}}
+\index{get\+Board@{get\+Board}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Board()}
+{\footnotesize\ttfamily \textbf{ Board} mikoli\+::\+Tetris\+Game\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Board 
+
+\begin{DoxyReturn}{Returns}
+The board. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_ae5f4d4708fd89d37338524c012e56471}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Current\+Fig@{get\+Current\+Fig}}
+\index{get\+Current\+Fig@{get\+Current\+Fig}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Current\+Fig()}
+{\footnotesize\ttfamily \textbf{ Figure} mikoli\+::\+Tetris\+Game\+::get\+Current\+Fig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Current\+Fig 
+
+\begin{DoxyReturn}{Returns}
+The current figure 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_acaf78c2a545806d1bb960056b7e4003c}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Is\+Falling@{get\+Is\+Falling}}
+\index{get\+Is\+Falling@{get\+Is\+Falling}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Is\+Falling()}
+{\footnotesize\ttfamily bool mikoli\+::\+Tetris\+Game\+::get\+Is\+Falling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+statut\+Is\+Falling 
+
+\begin{DoxyReturn}{Returns}
+True if the current figure is falling. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a327039d28495539cdfccbc5da8ebcb46}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Level()}
+{\footnotesize\ttfamily int mikoli\+::\+Tetris\+Game\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Level 
+
+\begin{DoxyReturn}{Returns}
+The current level. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a3921b5645aeb92a001c9fa6abbb2edad}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Mode@{get\+Mode}}
+\index{get\+Mode@{get\+Mode}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Mode()}
+{\footnotesize\ttfamily \textbf{ Mode} mikoli\+::\+Tetris\+Game\+::get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Mode 
+
+\begin{DoxyReturn}{Returns}
+The mode of the game. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a3ed7f9da5bdf23792204cb410bb748df}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Nb\+Lines@{get\+Nb\+Lines}}
+\index{get\+Nb\+Lines@{get\+Nb\+Lines}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Nb\+Lines()}
+{\footnotesize\ttfamily int mikoli\+::\+Tetris\+Game\+::get\+Nb\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Nb\+Lines 
+
+\begin{DoxyReturn}{Returns}
+The current number of lines made. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_aeda81fb5365aa9900da78d339adf10d1}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Next\+Fig@{get\+Next\+Fig}}
+\index{get\+Next\+Fig@{get\+Next\+Fig}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Next\+Fig()}
+{\footnotesize\ttfamily \textbf{ Figure} mikoli\+::\+Tetris\+Game\+::get\+Next\+Fig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Next\+Fig 
+
+\begin{DoxyReturn}{Returns}
+The next figure. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a2ec6092c198e4fc4d94198733969ae5f}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Score()}
+{\footnotesize\ttfamily int mikoli\+::\+Tetris\+Game\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Score 
+
+\begin{DoxyReturn}{Returns}
+The current score. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a1986343731ba85da145114128a098ded}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Shadow\+CF@{get\+Shadow\+CF}}
+\index{get\+Shadow\+CF@{get\+Shadow\+CF}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Shadow\+C\+F()}
+{\footnotesize\ttfamily std\+::vector$<$ \textbf{ Block} $>$ mikoli\+::\+Tetris\+Game\+::get\+Shadow\+CF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Shadow\+CF 
+
+\begin{DoxyReturn}{Returns}
+A vector with the blocks of the shadow. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a33b6a79e9f92c845f8e993b14e73b0bb}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Speed()}
+{\footnotesize\ttfamily int mikoli\+::\+Tetris\+Game\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+statut\+Speed 
+
+\begin{DoxyReturn}{Returns}
+The actual speed of the game. It\textquotesingle{}s a calcul made according of the level. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a3b7699d686b8bea0093b4679390131ab}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!get\+Timer@{get\+Timer}}
+\index{get\+Timer@{get\+Timer}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{get\+Timer()}
+{\footnotesize\ttfamily \textbf{ Timer} $\ast$ mikoli\+::\+Tetris\+Game\+::get\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Timer 
+
+\begin{DoxyReturn}{Returns}
+The timer instance with the elapsed time. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_ae7c0b5b7a0ff1534e0e5600f68e90086}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!is\+Begin@{is\+Begin}}
+\index{is\+Begin@{is\+Begin}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{is\+Begin()}
+{\footnotesize\ttfamily bool mikoli\+::\+Tetris\+Game\+::is\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+is\+Begin 
+
+\begin{DoxyReturn}{Returns}
+True if the game is began, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_af96f593fdf44d0ef29a595dd46698999}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!is\+Game\+Over@{is\+Game\+Over}}
+\index{is\+Game\+Over@{is\+Game\+Over}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{is\+Game\+Over()}
+{\footnotesize\ttfamily bool mikoli\+::\+Tetris\+Game\+::is\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+is\+Game\+Over 
+
+\begin{DoxyReturn}{Returns}
+True is the game is over, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_ac2ff51a7f1de2ba7c2cf84776f41fd28}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!is\+Paused@{is\+Paused}}
+\index{is\+Paused@{is\+Paused}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{is\+Paused()}
+{\footnotesize\ttfamily bool mikoli\+::\+Tetris\+Game\+::is\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+is\+Paused 
+
+\begin{DoxyReturn}{Returns}
+True if the game is paused, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_a4835119017717052ba3a0ab9d1ec5297}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!is\+Won@{is\+Won}}
+\index{is\+Won@{is\+Won}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{is\+Won()}
+{\footnotesize\ttfamily bool mikoli\+::\+Tetris\+Game\+::is\+Won (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+is\+Won 
+
+\begin{DoxyReturn}{Returns}
+True if the player reached it\textquotesingle{}s goal, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_tetris_game_ade4c761be1ed35be3bf0c8b26ac5db4f}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!move@{move}}
+\index{move@{move}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void mikoli\+::\+Tetris\+Game\+::move (\begin{DoxyParamCaption}\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction we want to move. Move the current figure in the direction \char`\"{}direction\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_tetris_game_a3835879100239f86d7c43397243cf888}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!rotate@{rotate}}
+\index{rotate@{rotate}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{rotate()}
+{\footnotesize\ttfamily void mikoli\+::\+Tetris\+Game\+::rotate (\begin{DoxyParamCaption}\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+rotate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction we want to rotate. Rotate the current figure in the direction \char`\"{}direction\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_tetris_game_aa4ff72861902e88ec05cf3ef518e18e1}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!set\+Auto\+Down@{set\+Auto\+Down}}
+\index{set\+Auto\+Down@{set\+Auto\+Down}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{set\+Auto\+Down()}
+{\footnotesize\ttfamily void mikoli\+::\+Tetris\+Game\+::set\+Auto\+Down (\begin{DoxyParamCaption}\item[{bool}]{auto\+Down }\end{DoxyParamCaption})}
+
+
+
+set\+Auto\+Down 
+
+
+\begin{DoxyParams}{Parameters}
+{\em auto\+Down} & Set the attribute \+\_\+auto\+Down with the parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_tetris_game_a6645544c546372e70128d3828eee1090}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!set\+Is\+Begin@{set\+Is\+Begin}}
+\index{set\+Is\+Begin@{set\+Is\+Begin}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{set\+Is\+Begin()}
+{\footnotesize\ttfamily void mikoli\+::\+Tetris\+Game\+::set\+Is\+Begin (\begin{DoxyParamCaption}\item[{bool}]{is\+Begin }\end{DoxyParamCaption})}
+
+
+
+set\+Is\+Begin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Begin} & Set the attribute \+\_\+is\+Begin with the parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_tetris_game_acea0ae935ddbe13558bd5ec12432b279}} 
+\index{mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}!set\+Is\+Falling@{set\+Is\+Falling}}
+\index{set\+Is\+Falling@{set\+Is\+Falling}!mikoli\+::\+Tetris\+Game@{mikoli\+::\+Tetris\+Game}}
+\subsubsection{set\+Is\+Falling()}
+{\footnotesize\ttfamily void mikoli\+::\+Tetris\+Game\+::set\+Is\+Falling (\begin{DoxyParamCaption}\item[{bool}]{is\+Falling }\end{DoxyParamCaption})}
+
+
+
+set\+Is\+Falling 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Falling} & Set the attribute \+\_\+is\+Falling with the parameter. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/tetrisgame.\+h\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/tetrisgame.\+cpp\end{DoxyCompactItemize}

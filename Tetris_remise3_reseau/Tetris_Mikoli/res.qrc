@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>sounds/figMove.mp3</file>
+        <file>sounds/figRotation.mp3</file>
+        <file>sounds/figRotationFail.mp3</file>
+        <file>sounds/figTouchDown.mp3</file>
+        <file>sounds/fourLines.mp3</file>
+        <file>sounds/gameOver.mp3</file>
+        <file>sounds/levelUp.mp3</file>
+        <file>sounds/moveSound.mp3</file>
+        <file>sounds/oneLine.mp3</file>
+        <file>sounds/pauseBack.mp3</file>
+        <file>sounds/pauseGo.mp3</file>
+        <file>sounds/start.mp3</file>
+        <file>sounds/tetris.mp3</file>
+        <file>sounds/threeLines.mp3</file>
+        <file>sounds/twoLines.mp3</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>image/background.png</file>
+        <file>image/backgroundi.png</file>
+    </qresource>
+</RCC>

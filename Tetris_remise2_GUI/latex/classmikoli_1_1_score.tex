@@ -1,0 +1,123 @@
+\section{mikoli\+:\+:Score Class Reference}
+\label{classmikoli_1_1_score}\index{mikoli\+::\+Score@{mikoli\+::\+Score}}
+
+
+The \doxyref{Score}{p.}{classmikoli_1_1_score} class This class will inform the score of the user and the number of lines he\textquotesingle{}s done. Also used buy the G\+UI.  
+
+
+
+
+{\ttfamily \#include $<$score.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_score_a30609739c62d21c769fbacedb32056df}} 
+\textbf{ Score} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Score}{p.}{classmikoli_1_1_score}\textquotesingle{}s constructor without parameters. This only constructor will set the score to 0 and the number of lines to 0 at the start of the game. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_score_a93f7b23dec71e242a6edc43093280603}} 
+\textbf{ $\sim$\+Score} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Score}{p.}{classmikoli_1_1_score}\textquotesingle{}s destructor. \end{DoxyCompactList}\item 
+int \textbf{ get\+Nb\+Lines} () const
+\begin{DoxyCompactList}\small\item\em get\+Nb\+Lines \end{DoxyCompactList}\item 
+int \textbf{ get\+Score} () const
+\begin{DoxyCompactList}\small\item\em get\+Score \end{DoxyCompactList}\item 
+int \textbf{ get\+Level} () const
+\begin{DoxyCompactList}\small\item\em get\+Level \end{DoxyCompactList}\item 
+void \textbf{ update\+Score} (int nbL, int nb\+Drop)
+\begin{DoxyCompactList}\small\item\em update\+Score \end{DoxyCompactList}\item 
+int \textbf{ calcul\+Score} (int nbL, int nb\+Drop)
+\begin{DoxyCompactList}\small\item\em calcul\+Score \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Score}{p.}{classmikoli_1_1_score} class This class will inform the score of the user and the number of lines he\textquotesingle{}s done. Also used buy the G\+UI. 
+
+\subsection{Member Function Documentation}
+\mbox{\label{classmikoli_1_1_score_ae445012b1e1c0ec1b1f1d10a5e89a5ef}} 
+\index{mikoli\+::\+Score@{mikoli\+::\+Score}!calcul\+Score@{calcul\+Score}}
+\index{calcul\+Score@{calcul\+Score}!mikoli\+::\+Score@{mikoli\+::\+Score}}
+\subsubsection{calcul\+Score()}
+{\footnotesize\ttfamily int mikoli\+::\+Score\+::calcul\+Score (\begin{DoxyParamCaption}\item[{int}]{nbL,  }\item[{int}]{nb\+Drop }\end{DoxyParamCaption})}
+
+
+
+calcul\+Score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbL} & the number of lines the player made at the last move. \\
+\hline
+{\em nb\+Drop} & the number of lines the player cross during a fall. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the amount to add to the score. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_score_aef36e40fc082cba8e8045869ce5fd5dd}} 
+\index{mikoli\+::\+Score@{mikoli\+::\+Score}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!mikoli\+::\+Score@{mikoli\+::\+Score}}
+\subsubsection{get\+Level()}
+{\footnotesize\ttfamily int mikoli\+::\+Score\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Level 
+
+\begin{DoxyReturn}{Returns}
+The current level 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_score_adea63d6c7c077d466c67fa464da84d91}} 
+\index{mikoli\+::\+Score@{mikoli\+::\+Score}!get\+Nb\+Lines@{get\+Nb\+Lines}}
+\index{get\+Nb\+Lines@{get\+Nb\+Lines}!mikoli\+::\+Score@{mikoli\+::\+Score}}
+\subsubsection{get\+Nb\+Lines()}
+{\footnotesize\ttfamily int mikoli\+::\+Score\+::get\+Nb\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Nb\+Lines 
+
+\begin{DoxyReturn}{Returns}
+The number of lines made by the player from the start of the game. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_score_aa17007e7173b0f1ace8cf7f8c09982ff}} 
+\index{mikoli\+::\+Score@{mikoli\+::\+Score}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!mikoli\+::\+Score@{mikoli\+::\+Score}}
+\subsubsection{get\+Score()}
+{\footnotesize\ttfamily int mikoli\+::\+Score\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Score 
+
+\begin{DoxyReturn}{Returns}
+The current score 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_score_a361456eee52265cd3c247bf4000eb398}} 
+\index{mikoli\+::\+Score@{mikoli\+::\+Score}!update\+Score@{update\+Score}}
+\index{update\+Score@{update\+Score}!mikoli\+::\+Score@{mikoli\+::\+Score}}
+\subsubsection{update\+Score()}
+{\footnotesize\ttfamily void mikoli\+::\+Score\+::update\+Score (\begin{DoxyParamCaption}\item[{int}]{nbL,  }\item[{int}]{nb\+Drop }\end{DoxyParamCaption})}
+
+
+
+update\+Score 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & number of lines the player made at the last move. This number will be added to the previous score. \\
+\hline
+{\em nb\+Drop} & the number of lines the player cross during a fall. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Tetris\+Exception}{p.}{classmikoli_1_1_tetris_exception}} & if nb is negative. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/score.\+h\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/score.\+cpp\end{DoxyCompactItemize}

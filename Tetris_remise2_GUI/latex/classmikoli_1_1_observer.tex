@@ -1,0 +1,53 @@
+\section{mikoli\+:\+:Observer Class Reference}
+\label{classmikoli_1_1_observer}\index{mikoli\+::\+Observer@{mikoli\+::\+Observer}}
+
+
+The \doxyref{Observer}{p.}{classmikoli_1_1_observer} class Implemented by the class that have to Observe another class(observable)  
+
+
+
+
+{\ttfamily \#include $<$observer.\+h$>$}
+
+Inheritance diagram for mikoli\+:\+:Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.709924cm]{classmikoli_1_1_observer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_observer_a5492a5fc3f7e81ec7bd9bbdb81614f21}} 
+virtual void {\bfseries Update} ()=0
+\item 
+\mbox{\label{classmikoli_1_1_observer_a1c24a11256659f80c6956274808100c4}} 
+void {\bfseries Add\+Obs} (\textbf{ Observable} $\ast$obs)
+\item 
+\mbox{\label{classmikoli_1_1_observer_a02036eb909a2a08b0ca5dc5485c81162}} 
+void {\bfseries Del\+Obs} (\textbf{ Observable} $\ast$obs)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_observer_a92209a844c15655dc0bdec717756e0f2}} 
+typedef std\+::list$<$ \textbf{ Observable} $\ast$ $>$\+::iterator {\bfseries iterator}
+\item 
+\mbox{\label{classmikoli_1_1_observer_a06f08c18caa6931b3b5e1d38a3e5541a}} 
+typedef std\+::list$<$ \textbf{ Observable} $\ast$ $>$\+::const\+\_\+iterator {\bfseries const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_observer_a2fa3a68b9a98dc6469807f80d0e1e4f1}} 
+std\+::list$<$ \textbf{ Observable} $\ast$ $>$ {\bfseries m\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Observer}{p.}{classmikoli_1_1_observer} class Implemented by the class that have to Observe another class(observable) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/observer.\+h\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/observer.\+cpp\end{DoxyCompactItemize}

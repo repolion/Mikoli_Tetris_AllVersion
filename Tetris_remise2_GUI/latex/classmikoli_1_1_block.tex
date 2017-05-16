@@ -1,0 +1,110 @@
+\section{mikoli\+:\+:Block Class Reference}
+\label{classmikoli_1_1_block}\index{mikoli\+::\+Block@{mikoli\+::\+Block}}
+
+
+The \doxyref{Block}{p.}{classmikoli_1_1_block} class.  
+
+
+
+
+{\ttfamily \#include $<$block.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_block_a8c51830645d572420b72beb2d532ccf4}} 
+\textbf{ Block} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Block}{p.}{classmikoli_1_1_block}\textquotesingle{}s Constructor without parameters. This constructor will use the default constructor of \doxyref{Position}{p.}{classmikoli_1_1_position} for \+\_\+position and set the color to red. \end{DoxyCompactList}\item 
+\textbf{ Block} (int x, int y, Color color)
+\begin{DoxyCompactList}\small\item\em \doxyref{Block}{p.}{classmikoli_1_1_block}\textquotesingle{}s Constructor with parameters. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_block_ab5c7dafdb6ce468305f0d0dd8fd61a4f}} 
+\textbf{ $\sim$\+Block} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Block}{p.}{classmikoli_1_1_block}\textquotesingle{}s destructor. \end{DoxyCompactList}\item 
+\textbf{ Position} \textbf{ get\+Position} () const
+\begin{DoxyCompactList}\small\item\em get\+Position \end{DoxyCompactList}\item 
+Q\+Color \textbf{ get\+Color} ()
+\begin{DoxyCompactList}\small\item\em get\+Color \end{DoxyCompactList}\item 
+void \textbf{ set\+Position} (int x, int y)
+\begin{DoxyCompactList}\small\item\em set\+Position \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_block_a62e3320dffd67f4d9e5fa43fd7f8d9db}} 
+void {\bfseries move} (Direction direction)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Block}{p.}{classmikoli_1_1_block} class. 
+
+This class will be used for building blocks that are part of a figure. A standard figure is composed with 4 blocks. \+\_\+position the position of the block in the board. \+\_\+color the color of the block. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classmikoli_1_1_block_a5efe161014ba0c08e5af54b622666f01}} 
+\index{mikoli\+::\+Block@{mikoli\+::\+Block}!Block@{Block}}
+\index{Block@{Block}!mikoli\+::\+Block@{mikoli\+::\+Block}}
+\subsubsection{Block()}
+{\footnotesize\ttfamily mikoli\+::\+Block\+::\+Block (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Block}{p.}{classmikoli_1_1_block}\textquotesingle{}s Constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value for the horizontal axis of the block. \\
+\hline
+{\em y} & The value for the vertical axis of the block. \\
+\hline
+{\em color} & The color of the block. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classmikoli_1_1_block_ab276833c3afde80f034e3f1b3a5d655a}} 
+\index{mikoli\+::\+Block@{mikoli\+::\+Block}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!mikoli\+::\+Block@{mikoli\+::\+Block}}
+\subsubsection{get\+Color()}
+{\footnotesize\ttfamily Q\+Color mikoli\+::\+Block\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Color 
+
+\begin{DoxyReturn}{Returns}
+The Qcolor of the block. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_block_a014678a48109a80fafe2530bedd1b4b3}} 
+\index{mikoli\+::\+Block@{mikoli\+::\+Block}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!mikoli\+::\+Block@{mikoli\+::\+Block}}
+\subsubsection{get\+Position()}
+{\footnotesize\ttfamily \textbf{ Position} mikoli\+::\+Block\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Position 
+
+\begin{DoxyReturn}{Returns}
+return The position of the block. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_block_abf0c31fab21222faa9e4e2cdaab12a62}} 
+\index{mikoli\+::\+Block@{mikoli\+::\+Block}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!mikoli\+::\+Block@{mikoli\+::\+Block}}
+\subsubsection{set\+Position()}
+{\footnotesize\ttfamily void mikoli\+::\+Block\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+set\+Position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new value for the horizontal axis. \\
+\hline
+{\em y} & The new value for the ordinate axis. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/block.\+h\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/block.\+cpp\end{DoxyCompactItemize}

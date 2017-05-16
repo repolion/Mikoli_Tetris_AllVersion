@@ -1,0 +1,370 @@
+\section{mikoli\+:\+:Board Class Reference}
+\label{classmikoli_1_1_board}\index{mikoli\+::\+Board@{mikoli\+::\+Board}}
+
+
+The \doxyref{Board}{p.}{classmikoli_1_1_board} class.  
+
+
+
+
+{\ttfamily \#include $<$board.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_board_a962f96c82929100aa34bb2aa4e9b266b}} 
+\textbf{ Board} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{Board}{p.}{classmikoli_1_1_board}\textquotesingle{}s constructor without parameters. This constructor uses the constructor with parameters by setting the height to 20 and the width to 10. \end{DoxyCompactList}\item 
+\textbf{ Board} (int height, int width)
+\begin{DoxyCompactList}\small\item\em \doxyref{Board}{p.}{classmikoli_1_1_board}\textquotesingle{}s constructor with parameters. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_board_a9bf6588fe4dc4d20c52e1bd95c3c218a}} 
+\textbf{ $\sim$\+Board} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Board\textquotesingle{}s inline destructor. \end{DoxyCompactList}\item 
+std\+::list$<$ \textbf{ Block} $>$ \textbf{ get\+Blocks} () const
+\begin{DoxyCompactList}\small\item\em get\+Blocks \end{DoxyCompactList}\item 
+void \textbf{ add\+Figure} (\textbf{ Figure} \&cF)
+\begin{DoxyCompactList}\small\item\em add\+Figure \end{DoxyCompactList}\item 
+bool \textbf{ can\+Go\+Lower} (\textbf{ Figure} \&cF)
+\begin{DoxyCompactList}\small\item\em can\+Go\+Lower \end{DoxyCompactList}\item 
+int \textbf{ validation\+Height} (int nb)
+\begin{DoxyCompactList}\small\item\em validation\+Height This method check if the number received is $>$= 10. \end{DoxyCompactList}\item 
+int \textbf{ validation\+Width} (int nb)
+\begin{DoxyCompactList}\small\item\em validation\+Width This method check if the number received is $>$= 5. \end{DoxyCompactList}\item 
+void \textbf{ move} (\textbf{ Figure} \&cF, Direction direction)
+\begin{DoxyCompactList}\small\item\em move This method uses \doxyref{can\+Move()}{p.}{classmikoli_1_1_board_a7587a7f1ebc38858ced317469980bfb8} to check if it\textquotesingle{}s possible to move the figure in this direction, and if so, will actually move the figure by calling her method \doxyref{move()}{p.}{classmikoli_1_1_board_a5d161c3f385a75366ddae841703073f2}. \end{DoxyCompactList}\item 
+void \textbf{ rotate} (\textbf{ Figure} \&cF, Direction direction)
+\begin{DoxyCompactList}\small\item\em rotate \end{DoxyCompactList}\item 
+bool \textbf{ can\+Move} (\textbf{ Figure} cF, Direction direction)
+\begin{DoxyCompactList}\small\item\em can\+Move This method check if the current figure can move in the direction wished. To do this, she calculates the new positions of the current figure and then check if theses positions are available in the board. So, she compares theses positions with the positions of the blocks in \+\_\+list\+Blocks. \end{DoxyCompactList}\item 
+bool \textbf{ can\+Rotate} (\textbf{ Figure} cF, Direction direction)
+\begin{DoxyCompactList}\small\item\em can\+Rotate This method check if the current figure can rotate in the direction wished. To do this, she calculates the new positions of the current figure and then check if theses positions are available in the board. So, she compares theses positions with the positions of the blocks in \+\_\+list\+Blocks. \end{DoxyCompactList}\item 
+bool \textbf{ can\+Put} (\textbf{ Figure} cF)
+\begin{DoxyCompactList}\small\item\em can\+Put This method check if the position of the \+\_\+entry\+Point is available. To do this, she calculates the positions the current figure need and check if theses positions are available at the \+\_\+entry\+Point. \end{DoxyCompactList}\item 
+bool \textbf{ are\+Blocks\+Available} (\textbf{ Figure} cF)
+\begin{DoxyCompactList}\small\item\em are\+Blocks\+Available This method check is the new positions of the current figure are available in the board. \end{DoxyCompactList}\item 
+int \textbf{ check\+Lines} ()
+\begin{DoxyCompactList}\small\item\em check\+Lines This method check if there are lines in the board to delete. It checks each lines of the board and for each x, check in the \+\_\+list\+Blocks if a block has this position.\+It calculates the number of blocks for each line and if there are as much blocks as the width of the board, it adds the y in a List to send to remove\+Lines(). \end{DoxyCompactList}\item 
+void \textbf{ remove\+Line} (int line)
+\begin{DoxyCompactList}\small\item\em remove\+Lines This method receives a list of all the y in the board to delete and then, will just delete them. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_board_a77e33d6aa3cb66a59afedf4737a57110}} 
+void \textbf{ reorganize} (int line)
+\begin{DoxyCompactList}\small\item\em reorganize This method will get down all the blocks in the middle of the board after a suppression of lines. She\textquotesingle{}s called after is\+Fragmented() in the case she returns true. \end{DoxyCompactList}\item 
+\textbf{ Position} \textbf{ entry\+Point} ()
+\begin{DoxyCompactList}\small\item\em entry\+Point This method calculate the position of the \+\_\+entry\+Point. To do this, it calculates it from the width and the height of the board. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_board_a5e2733279bcf307ba52b77aadf4c6869}} 
+int \textbf{ fall} (\textbf{ Figure} \&cF)
+\begin{DoxyCompactList}\small\item\em fall This method will get the current figure straight to the bottom of the board. It is called after the player pressed a certain button. \end{DoxyCompactList}\item 
+void \textbf{ set\+Block\+Down} (\textbf{ Block} \&bl)
+\begin{DoxyCompactList}\small\item\em set\+Block\+Down \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_board_ac032b180747a88af8608c5da86ff8dcb}} 
+void \textbf{ reset} ()
+\begin{DoxyCompactList}\small\item\em reset This method cleans the board\textquotesingle{}s list of blocks. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \textbf{ get\+Board\+Size} ()
+\begin{DoxyCompactList}\small\item\em get\+Board\+Size \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Board}{p.}{classmikoli_1_1_board} class. 
+
+This class is used to represent a fictive board in which the user will play. Here will stand the blocks and the current figure of the player. A \char`\"{}fictive board\char`\"{} because it\textquotesingle{}s not really a board. It is a list of \doxyref{Block}{p.}{classmikoli_1_1_block}. This list contains only the blocks placed in the graphical board. There are methods that allow to handle the moves of the current figure, to rotate the current figure and the suppression of lines, the reorganization of the blocks in the \char`\"{}board\char`\"{}.
+
+\+\_\+list\+Blocks The list of the blocks inside the board. \+\_\+width The width of the board. \+\_\+height The height of the board. \+\_\+entry\+Point The position where the current figure appears when she arrives in the board. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classmikoli_1_1_board_a4b8628be9eef0f0fa48623323b290874}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!Board@{Board}}
+\index{Board@{Board}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{Board()}
+{\footnotesize\ttfamily mikoli\+::\+Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{height,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+\doxyref{Board}{p.}{classmikoli_1_1_board}\textquotesingle{}s constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & The height of the board. \\
+\hline
+{\em width} & The width of the board. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classmikoli_1_1_board_a4272ac0bd96b182eed00b35195438706}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!add\+Figure@{add\+Figure}}
+\index{add\+Figure@{add\+Figure}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{add\+Figure()}
+{\footnotesize\ttfamily void mikoli\+::\+Board\+::add\+Figure (\begin{DoxyParamCaption}\item[{\textbf{ Figure} \&}]{cF }\end{DoxyParamCaption})}
+
+
+
+add\+Figure 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cF} & The figure to add in the board. Add the current figure to the board\textquotesingle{}s list of blocks. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_board_ace3b24c8b41e0ca34f2b272f210ca38b}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!are\+Blocks\+Available@{are\+Blocks\+Available}}
+\index{are\+Blocks\+Available@{are\+Blocks\+Available}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{are\+Blocks\+Available()}
+{\footnotesize\ttfamily bool mikoli\+::\+Board\+::are\+Blocks\+Available (\begin{DoxyParamCaption}\item[{\textbf{ Figure}}]{cF }\end{DoxyParamCaption})}
+
+
+
+are\+Blocks\+Available This method check is the new positions of the current figure are available in the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cF} & The current figure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the positions are available, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_a23ceddb96be5e009bfe0dcfa62adc83e}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!can\+Go\+Lower@{can\+Go\+Lower}}
+\index{can\+Go\+Lower@{can\+Go\+Lower}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{can\+Go\+Lower()}
+{\footnotesize\ttfamily bool mikoli\+::\+Board\+::can\+Go\+Lower (\begin{DoxyParamCaption}\item[{\textbf{ Figure} \&}]{cF }\end{DoxyParamCaption})}
+
+
+
+can\+Go\+Lower 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cF} & The current figure to test. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the figure can go once down, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_a7587a7f1ebc38858ced317469980bfb8}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!can\+Move@{can\+Move}}
+\index{can\+Move@{can\+Move}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{can\+Move()}
+{\footnotesize\ttfamily bool mikoli\+::\+Board\+::can\+Move (\begin{DoxyParamCaption}\item[{\textbf{ Figure}}]{cF,  }\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+can\+Move This method check if the current figure can move in the direction wished. To do this, she calculates the new positions of the current figure and then check if theses positions are available in the board. So, she compares theses positions with the positions of the blocks in \+\_\+list\+Blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cF} & The current figure. \\
+\hline
+{\em direction} & The direction we want to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the positions are available, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_a6ce4ca7bf4d4fd9a5a25bbf597b4c3d0}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!can\+Put@{can\+Put}}
+\index{can\+Put@{can\+Put}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{can\+Put()}
+{\footnotesize\ttfamily bool mikoli\+::\+Board\+::can\+Put (\begin{DoxyParamCaption}\item[{\textbf{ Figure}}]{cF }\end{DoxyParamCaption})}
+
+
+
+can\+Put This method check if the position of the \+\_\+entry\+Point is available. To do this, she calculates the positions the current figure need and check if theses positions are available at the \+\_\+entry\+Point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cF} & The figure we want to put in the board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the positions are available, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_a8f2c168d7c08e430af73dc0e1f3a166b}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!can\+Rotate@{can\+Rotate}}
+\index{can\+Rotate@{can\+Rotate}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{can\+Rotate()}
+{\footnotesize\ttfamily bool mikoli\+::\+Board\+::can\+Rotate (\begin{DoxyParamCaption}\item[{\textbf{ Figure}}]{cF,  }\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+can\+Rotate This method check if the current figure can rotate in the direction wished. To do this, she calculates the new positions of the current figure and then check if theses positions are available in the board. So, she compares theses positions with the positions of the blocks in \+\_\+list\+Blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cF} & The current figure. \\
+\hline
+{\em direction} & The direction we want to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the positions are available, false otherwise. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_a0c64be1927561b1c39b4e9bb5fb5ee58}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!check\+Lines@{check\+Lines}}
+\index{check\+Lines@{check\+Lines}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{check\+Lines()}
+{\footnotesize\ttfamily int mikoli\+::\+Board\+::check\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check\+Lines This method check if there are lines in the board to delete. It checks each lines of the board and for each x, check in the \+\_\+list\+Blocks if a block has this position.\+It calculates the number of blocks for each line and if there are as much blocks as the width of the board, it adds the y in a List to send to remove\+Lines(). 
+
+\begin{DoxyReturn}{Returns}
+The list with all the lines to delete. If there isn\textquotesingle{}t any lines to delete, this list is empty. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_adc1d575d66975647357f6aba3b4a5c22}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!entry\+Point@{entry\+Point}}
+\index{entry\+Point@{entry\+Point}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{entry\+Point()}
+{\footnotesize\ttfamily \textbf{ Position} mikoli\+::\+Board\+::entry\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+entry\+Point This method calculate the position of the \+\_\+entry\+Point. To do this, it calculates it from the width and the height of the board. 
+
+\begin{DoxyReturn}{Returns}
+The position of the \+\_\+entry\+Point. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_a5574a78cc3397630d10c6f0073f03cf7}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!get\+Blocks@{get\+Blocks}}
+\index{get\+Blocks@{get\+Blocks}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{get\+Blocks()}
+{\footnotesize\ttfamily std\+::list$<$ \textbf{ Block} $>$ mikoli\+::\+Board\+::get\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Blocks 
+
+\begin{DoxyReturn}{Returns}
+The list of the blocks in the board. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_aefec6b842d04bafb48247e8d939a5d23}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!get\+Board\+Size@{get\+Board\+Size}}
+\index{get\+Board\+Size@{get\+Board\+Size}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{get\+Board\+Size()}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ mikoli\+::\+Board\+::get\+Board\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Board\+Size 
+
+\begin{DoxyReturn}{Returns}
+A pair with two integers, the width and height of the board. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_board_a5d161c3f385a75366ddae841703073f2}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!move@{move}}
+\index{move@{move}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void mikoli\+::\+Board\+::move (\begin{DoxyParamCaption}\item[{\textbf{ Figure} \&}]{cF,  }\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+move This method uses \doxyref{can\+Move()}{p.}{classmikoli_1_1_board_a7587a7f1ebc38858ced317469980bfb8} to check if it\textquotesingle{}s possible to move the figure in this direction, and if so, will actually move the figure by calling her method \doxyref{move()}{p.}{classmikoli_1_1_board_a5d161c3f385a75366ddae841703073f2}. 
+
+If itsn\textquotesingle{}t possible to move the figure, the method does nothing. 
+\begin{DoxyParams}{Parameters}
+{\em cF} & The current figure. \\
+\hline
+{\em direction} & The direction into move the figure. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_board_a6315ef94307ec9e9ceb216fd8df2211e}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!remove\+Line@{remove\+Line}}
+\index{remove\+Line@{remove\+Line}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{remove\+Line()}
+{\footnotesize\ttfamily void mikoli\+::\+Board\+::remove\+Line (\begin{DoxyParamCaption}\item[{int}]{line }\end{DoxyParamCaption})}
+
+
+
+remove\+Lines This method receives a list of all the y in the board to delete and then, will just delete them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The line where all the blocks will be removed from the board\textquotesingle{}s list. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_board_a0406a325caadff38e76e01d017a6a137}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!rotate@{rotate}}
+\index{rotate@{rotate}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{rotate()}
+{\footnotesize\ttfamily void mikoli\+::\+Board\+::rotate (\begin{DoxyParamCaption}\item[{\textbf{ Figure} \&}]{cF,  }\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+rotate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cF} & The current figure to rotate \\
+\hline
+{\em direction} & The direction we want to rotate \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_board_a173bb3591cc4fdc68bec1beb605c5d5b}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!set\+Block\+Down@{set\+Block\+Down}}
+\index{set\+Block\+Down@{set\+Block\+Down}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{set\+Block\+Down()}
+{\footnotesize\ttfamily void mikoli\+::\+Board\+::set\+Block\+Down (\begin{DoxyParamCaption}\item[{\textbf{ Block} \&}]{bl }\end{DoxyParamCaption})}
+
+
+
+set\+Block\+Down 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bl} & The block to move This method is used in \doxyref{reorganize()}{p.}{classmikoli_1_1_board_a77e33d6aa3cb66a59afedf4737a57110}. It changes the position of the block to y -\/ 1. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_board_aef8fd7041d02111b26eae7b5ae6790aa}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!validation\+Height@{validation\+Height}}
+\index{validation\+Height@{validation\+Height}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{validation\+Height()}
+{\footnotesize\ttfamily int mikoli\+::\+Board\+::validation\+Height (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+validation\+Height This method check if the number received is $>$= 10. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & The number to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number if he\textquotesingle{}s $>$= 10, an exception otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Tetris\+Exception}{p.}{classmikoli_1_1_tetris_exception}} & if nb $<$ 10. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\label{classmikoli_1_1_board_a89ccb6cb5ee044306fcaa2e7d9f014c3}} 
+\index{mikoli\+::\+Board@{mikoli\+::\+Board}!validation\+Width@{validation\+Width}}
+\index{validation\+Width@{validation\+Width}!mikoli\+::\+Board@{mikoli\+::\+Board}}
+\subsubsection{validation\+Width()}
+{\footnotesize\ttfamily int mikoli\+::\+Board\+::validation\+Width (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+validation\+Width This method check if the number received is $>$= 5. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & The number to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number if he\textquotesingle{}s $>$= 5, an exception otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxyref{Tetris\+Exception}{p.}{classmikoli_1_1_tetris_exception}} & if nb $<$ 5. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/board.\+h\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/board.\+cpp\end{DoxyCompactItemize}

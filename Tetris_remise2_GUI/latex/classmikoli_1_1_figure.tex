@@ -1,0 +1,153 @@
+\section{mikoli\+:\+:Figure Class Reference}
+\label{classmikoli_1_1_figure}\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+
+
+The \doxyref{Figure}{p.}{classmikoli_1_1_figure} class.  
+
+
+
+
+{\ttfamily \#include $<$figure.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classmikoli_1_1_figure_af48a1d65138534359444f46ff2cac139}} 
+\textbf{ Figure} ()
+\begin{DoxyCompactList}\small\item\em Figures constructor without parameters. This constructor will use the constructor without parameters og \doxyref{Position}{p.}{classmikoli_1_1_position} for initializing the attribute \+\_\+position and settings the \+\_\+color attribute to red. \end{DoxyCompactList}\item 
+\textbf{ Figure} (Type\+Shape type\+Shape)
+\begin{DoxyCompactList}\small\item\em Figures Constructor with parameters. \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_figure_af851763ba4fb93940ad0584647d5028d}} 
+\textbf{ $\sim$\+Figure} ()
+\begin{DoxyCompactList}\small\item\em Figures destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Position} $>$ \textbf{ get\+Positions} ()
+\begin{DoxyCompactList}\small\item\em get\+Positions \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Block} $>$ \textbf{ get\+Blocks} ()
+\begin{DoxyCompactList}\small\item\em get\+Blocks \end{DoxyCompactList}\item 
+Type\+Shape \textbf{ get\+Type\+Figure} ()
+\begin{DoxyCompactList}\small\item\em get\+Type\+Figure \end{DoxyCompactList}\item 
+\mbox{\label{classmikoli_1_1_figure_a2b86d8f2178edbf39f4a9d4312e3f880}} 
+void {\bfseries set\+Blocks} (std\+::vector$<$ \textbf{ Block} $>$)
+\item 
+void \textbf{ move} (Direction direction)
+\begin{DoxyCompactList}\small\item\em move Makes it possible to move a figure to the left, right or down. \end{DoxyCompactList}\item 
+void \textbf{ rotate} (Direction direction)
+\begin{DoxyCompactList}\small\item\em rotate Makes it possible to rotate a figure to the left or to the right. \end{DoxyCompactList}\item 
+void \textbf{ new\+Position} (\textbf{ Position} position)
+\begin{DoxyCompactList}\small\item\em new\+Position Makes it possible to displace a figure by modifying the location of its central point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Figure}{p.}{classmikoli_1_1_figure} class. 
+
+This class is used to construct a figure. A figure is composed with 4 blocks and a center point around which the figure can rotate. \+\_\+\+Blocks An array of 4 blocks . \+\_\+axe\+Point The point around which the figure can rotate also used to put a figure in the board at a certain position. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classmikoli_1_1_figure_a5c6b4df3de6ddb6a36a2d86501fbe311}} 
+\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}!Figure@{Figure}}
+\index{Figure@{Figure}!mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+\subsubsection{Figure()}
+{\footnotesize\ttfamily mikoli\+::\+Figure\+::\+Figure (\begin{DoxyParamCaption}\item[{Type\+Shape}]{type\+Shape }\end{DoxyParamCaption})}
+
+
+
+Figures Constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Shape} & The type of the \doxyref{Figure}{p.}{classmikoli_1_1_figure}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classmikoli_1_1_figure_a07bfd00b5da770802438a75a79a76084}} 
+\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}!get\+Blocks@{get\+Blocks}}
+\index{get\+Blocks@{get\+Blocks}!mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+\subsubsection{get\+Blocks()}
+{\footnotesize\ttfamily std\+::vector$<$ \textbf{ Block} $>$ mikoli\+::\+Figure\+::get\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Blocks 
+
+\begin{DoxyReturn}{Returns}
+return a list of Blocks which forms the figure. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_figure_a996d2b91660d2b8cdd989f7e3a128661}} 
+\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}!get\+Positions@{get\+Positions}}
+\index{get\+Positions@{get\+Positions}!mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+\subsubsection{get\+Positions()}
+{\footnotesize\ttfamily std\+::vector$<$ \textbf{ Position} $>$ mikoli\+::\+Figure\+::get\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Positions 
+
+\begin{DoxyReturn}{Returns}
+return The list of positions which forms the figure. 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_figure_a0485f62c2c948f57b6aff2ef37865340}} 
+\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}!get\+Type\+Figure@{get\+Type\+Figure}}
+\index{get\+Type\+Figure@{get\+Type\+Figure}!mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+\subsubsection{get\+Type\+Figure()}
+{\footnotesize\ttfamily Type\+Shape mikoli\+::\+Figure\+::get\+Type\+Figure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Type\+Figure 
+
+\begin{DoxyReturn}{Returns}
+The type of the figure 
+\end{DoxyReturn}
+\mbox{\label{classmikoli_1_1_figure_a75c5050f6e5f4bacb7ec928c23ceb0ad}} 
+\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}!move@{move}}
+\index{move@{move}!mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void mikoli\+::\+Figure\+::move (\begin{DoxyParamCaption}\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+move Makes it possible to move a figure to the left, right or down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction in which the figure should be moved. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_figure_a2abeaf3eb57f5e534b00b170b1279ae8}} 
+\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}!new\+Position@{new\+Position}}
+\index{new\+Position@{new\+Position}!mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+\subsubsection{new\+Position()}
+{\footnotesize\ttfamily void mikoli\+::\+Figure\+::new\+Position (\begin{DoxyParamCaption}\item[{\textbf{ Position}}]{position }\end{DoxyParamCaption})}
+
+
+
+new\+Position Makes it possible to displace a figure by modifying the location of its central point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The new position of the figures\textquotesingle{}s central point. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classmikoli_1_1_figure_a2bfc5afd31c2a14f1083100adf680e55}} 
+\index{mikoli\+::\+Figure@{mikoli\+::\+Figure}!rotate@{rotate}}
+\index{rotate@{rotate}!mikoli\+::\+Figure@{mikoli\+::\+Figure}}
+\subsubsection{rotate()}
+{\footnotesize\ttfamily void mikoli\+::\+Figure\+::rotate (\begin{DoxyParamCaption}\item[{Direction}]{direction }\end{DoxyParamCaption})}
+
+
+
+rotate Makes it possible to rotate a figure to the left or to the right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction in which the figure should rotate. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/figure.\+h\item 
+C\+:/\+Users/\+Olivier/\+Desktop/\+Final Tetris cleaned/\+Tetris\+\_\+\+Mikoli/figure.\+cpp\end{DoxyCompactItemize}
